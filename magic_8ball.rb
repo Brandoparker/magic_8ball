@@ -55,7 +55,6 @@ def eight_ball
     puts @answers 
   elsif question == '4'
     reset_answers
-    
   else
     puts
     puts "---THE MAGIC 8BALL SAYS:---" .colorize(:cyan)
