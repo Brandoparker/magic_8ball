@@ -12,7 +12,6 @@ end
 
 def eight_ball
   puts
-  puts
   puts "---Welcome to the Magic 8 Ball!---" .colorize(:cyan)
   puts "Please type a question, or pick a number" .colorize(:cyan)
   puts "1) Add an Answer" .colorize(:cyan)
@@ -35,14 +34,12 @@ def eight_ball
     @answers = @answers.slice(0,6)
   end
   
-  # Quit & Add 
   if question == '3'
     puts "---Have a Nice Day!---" .colorize(:cyan)
     puts  
     exit
   elsif question == '1'
-      add_answers
-    #The actual question and answer
+    add_answers
   elsif question == '2'
     puts
     puts "---The answers are---" .colorize(:cyan)
